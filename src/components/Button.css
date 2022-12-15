@@ -22,10 +22,11 @@ body {
 
 .dropdown1 .dropdown-btn1 {
   padding: 10px;
-  background: #fff;
+  background: rgb(86, 190, 72);
   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
   font-weight: bold;
-  color: #333;
+  color: #fff;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -37,10 +38,10 @@ body {
   top: 110%;
   left: 0;
   padding: 15px;
-  background: #fff;
+  background: rgb(86, 190, 72);
   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
   font-weight: 500;
-  color: #333;
+  color: #fff;
   width: 95%;
 }
 
@@ -51,5 +52,5 @@ body {
 }
 
 .dropdown1 .dropdown-content1 .dropdown-item1:hover {
-  background: #f4f4f4;
+  background: rgb(107, 235, 90);
 }

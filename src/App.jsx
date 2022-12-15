@@ -2,6 +2,8 @@ import './App.css';
 import { useState } from 'react';
 import { DropDownTest } from './components/DropDownTest';
 import { Button } from './components/Button';
+import { Header } from './components/Header';
+import { Sidebar } from './components/Sidebar';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -58,8 +60,9 @@ function App() {
   const [selected, setSelected] = useState('Choose one');
   return (
     <div className="App">
+      <Header />
       <Button selected={selected} setSelected={setSelected} />
-
+      <Sidebar />
       <div>
         <button className="dropdown-btn" onClick={handleOpenSecon}>
           Dropdown
