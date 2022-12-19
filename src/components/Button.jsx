@@ -6,7 +6,7 @@ export const Button = ({ selected, setSelected }) => {
 
   const options = ['React', 'Vue', 'Angular'];
 
-  const options2 = [
+  let options2 = [
     { name: 'React', id: 1 },
     { name: 'Vue', id: 2 },
     { name: 'Angular', id: 3 },
