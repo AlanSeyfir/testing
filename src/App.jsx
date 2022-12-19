@@ -12,7 +12,11 @@ function App() {
     setOpen(!open);
   };
 
-  //Icon Image: https://www.google.com/search?q=plus+sign&sxsrf=ALiCzsbAnaLXpD3m5UVp09hoW1S_bO8Fcg:1670436091489&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiOqOmui-j7AhXnIUQIHUvkDJUQ_AUoAXoECAEQAw&biw=1920&bih=941&dpr=1#imgrc=d4TzD_RlqTTY2M
+  /**
+   *  https://blog.logrocket.com/react-onclick-event-handlers-guide/
+   *  https://stackoverflow.com/questions/56224731/react-passing-onclick-as-props-to-sub-components-required
+   *  https://www.google.com/search?q=props.onclick&oq=props.onclick&aqs=chrome..69i57.3057j0j1&sourceid=chrome&ie=UTF-8
+   */
 
   //? Must be a better way to improve all the handle functions
   //* I found using React cloneElement API, but they encourage to not use it.
@@ -57,7 +61,7 @@ function App() {
     setOpen(false);
   };
 
-  const [selected, setSelected] = useState('Choose one');
+  const [selected, setSelected] = useState('');
   return (
     <div className="App">
       <Header />
@@ -95,20 +99,6 @@ function App() {
           <button onClick={handleMouseSixth}>Gardevoir</button>,
         ]}
       />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }
