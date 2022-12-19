@@ -4,6 +4,7 @@ import { DropDownTest } from './components/DropDownTest';
 import { Button } from './components/Button';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
+import { DropDownObj } from './components/DropDownObj';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -67,6 +68,7 @@ function App() {
       <Header />
       <Button selected={selected} setSelected={setSelected} />
       <Sidebar />
+      <DropDownObj />
       <div>
         <button className="dropdown-btn" onClick={handleOpenSecon}>
           Dropdown

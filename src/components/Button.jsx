@@ -4,7 +4,7 @@ import './Button.css';
 export const Button = ({ selected, setSelected }) => {
   const [isActive, setIsActive] = useState(false);
 
-  const options = ['React', 'Vue', 'Angular'];
+  // const options = ['React', 'Vue', 'Angular'];
 
   let options2 = [
     { name: 'React', id: 1 },
@@ -34,20 +34,19 @@ export const Button = ({ selected, setSelected }) => {
             d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
           />
         </svg>
-
         {selected}
       </div>
       {isActive && (
         <div className="dropdown-content1">
-          {options.map((option) => (
+          {options2.map((option) => (
             <div
               className="dropdown-item1"
-              onClick={(e) => {
-                setSelected(option);
+              onClick={() => {
+                setSelected(option.name);
                 setIsActive(false);
               }}
             >
-              {option}
+              {option.name}
             </div>
           ))}
         </div>
